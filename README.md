@@ -16,6 +16,7 @@ Estimation of synthetic accessibility score of drug-like molecules based on mole
 Cite the source publication.
 - Code: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score
 - Checkpoints: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score/fpscores.pkl.gz
+- Publication: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8
 
 # License
 The main script is licensed by Novartis. The License is kept in this script. The current repository is licensed under GPLv3.
