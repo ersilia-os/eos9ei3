@@ -1,24 +1,24 @@
-# Model title
+# Synthetic accessibility score
 ## Model identifiers
-- Slug:
-- Ersilia ID: 
-- Tags: 
+- Slug: sa-score
+- Ersilia ID: eos9ei3
+- Tags: Synthetic accessibility
 
 # Model description
-Short description of the model in one or two sentences.
-- Input:
-- Output: {unit and description of output) 
-- Model type: (Regression or Classification)
-- Training set: (number of compounds and link to the training data)
-- Mode of training: (is it pretrained? that is were the checkpoints downloaded and used to train the model? or is it retrained? that is trained from scratch with an updated data)
+Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions.
+- Input: Compound
+- Output: SA score. Large SA scores (e.g. >6) indicate difficult synthesis. Small scores (e.g. <3) indicate feasible synthesis.
+- Model type: Regression
+- Training set: N/A
+- Mode of training: Pretrained
 
 # Source code
 Cite the source publication.
-- Code: include link to the source code
-- Checkpoints: include the link to the checkpoints used if model is a pretrained model
+- Code: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score
+- Checkpoints: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score/fpscores.pkl.gz
 
 # License
-State the licences used which are GPL v3 license used by Ersilia and the license used by the source code, if any exists. Use [this guide]() on how to license new models to be incorporated into Ersilia's model hub 
+The main script is licensed by Novartis. The License is kept in this script. The current repository is licensed under GPLv3.
 
 # History 
-- State the date when the model was downloaded and incorporated into Ersilia.
+- Model incorporated on the 13th of July, 2022
