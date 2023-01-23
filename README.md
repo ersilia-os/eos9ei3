@@ -1,25 +1,40 @@
 # Synthetic accessibility score
-## Model identifiers
-- Slug: sa-score
-- Ersilia ID: eos9ei3
-- Tags: Synthetic accessibility
 
-# Model description
-Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions.
-- Input: Compound
-- Output: SA score. Large SA scores (e.g. >6) indicate difficult synthesis. Small scores (e.g. <3) indicate feasible synthesis.
-- Model type: Regression
-- Training set: N/A
-- Mode of training: Pretrained
+Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.
 
-# Source code
-Cite the source publication.
-- Code: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score
-- Checkpoints: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score/fpscores.pkl.gz
-- Publication: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8
+## Identifiers
 
-# License
-The main script is licensed by Novartis. The License is kept in this script. The current repository is licensed under GPLv3.
+* EOS model ID: `eos9ei3`
+* Slug: `sa-score`
 
-# History 
-- Model incorporated on the 13th of July, 2022
+## Characteristics
+
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Regression`
+* Output: `Score`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Low scores indicate higher synthetic accessibility
+
+## References
+
+* [Publication](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8)
+* [Source Code](https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score)
+* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+
+## License
+
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a BSD-3.0 license.
+
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+
+[Help us](https://www.ersilia.io/donate) achieve our mission!
