@@ -116,6 +116,7 @@ def calculateScore(m):
 
 def processMols(mols):
     print('smiles\tName\tsa_score')
+    R = []
     for i, m in enumerate(mols):
         if m is None:
             continue
@@ -124,6 +125,8 @@ def processMols(mols):
 
         smiles = Chem.MolToSmiles(m)
         print(smiles + "\t" + m.GetProp('_Name') + "\t%3f" % s)
+        R += [[smiles, m.GetProp("_Name"), "\t%3f" % s]]
+    return R
 
 
 if __name__ == '__main__':
