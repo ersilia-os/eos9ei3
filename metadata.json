@@ -27,5 +27,11 @@
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8",
     "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score",
     "License": "BSD-3.0",
-    "Contributor": "miquelduranfrigola"
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9ei3",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ]
 }
