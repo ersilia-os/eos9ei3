@@ -47,6 +47,6 @@ with open(output_file, "w") as f:
     writer = csv.writer(f)
     writer.writerow(["sa_score"])  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)
 
 os.remove("tmp_input.smi")
