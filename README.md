@@ -26,7 +26,7 @@ Estimation of synthetic accessibility score (SAScore) of drug-like molecules bas
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos9ei3)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9ei3) (AMD64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9ei3) (AMD64, ARM64)
 
 ## Citation
 
