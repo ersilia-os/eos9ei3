@@ -88,7 +88,7 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                    R += [{"sa_score": Float(x) for x in r}]
+                    R += [{"outcome": Float(x) for x in r}]
         meta = {
             "outcome": h
         }
