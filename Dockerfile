@@ -1,7 +1,7 @@
-FROM bentoml/model-server:0.11.0-py37
+FROM bentoml/model-server:0.11.0-py312
 MAINTAINER ersilia
 
-RUN pip install rdkit==2023.3.1
+RUN pip install rdkit==2024.9.6
 
 WORKDIR /repo
 COPY . /repo
