@@ -2,7 +2,7 @@
 
 Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.
 
-This model was incorporated on 2022-07-10.
+This model was incorporated on 2022-07-12.
 
 ## Information
 ### Identifiers
