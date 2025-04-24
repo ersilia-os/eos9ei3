@@ -37,7 +37,7 @@
     "Publication Year": 2009,
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8",
     "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score",
-    "License": "BSD-3.0",
+    "License": "BSD-3.0-Clause",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2022-07-12",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip",
