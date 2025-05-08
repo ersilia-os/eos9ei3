@@ -41,8 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `8`
 - **Environment Size (Mb):** `497`
-- **Image Size (Mb):** `426.98`
+- **Image Size (Mb):** `426.85`
 
+**Computational Performance (seconds):**
+- 10 inputs: `30.39`
+- 100 inputs: `20.33`
+- 10000 inputs: `256.74`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score](https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score)
