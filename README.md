@@ -2,8 +2,7 @@
 
 Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.
 
-This model was incorporated on 2022-07-12.
-
+This model was incorporated on 2022-07-12.Last packaged on 2025-09-15.
 
 ## Information
 ### Identifiers
@@ -36,18 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ei3](https://hub.docker.com/r/ersiliaos/eos9ei3)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `8`
 - **Environment Size (Mb):** `516`
-- **Image Size (Mb):** `433.73`
+- **Image Size (Mb):** `450.34`
 
 **Computational Performance (seconds):**
-- 10 inputs: `26.26`
-- 100 inputs: `16.03`
-- 10000 inputs: `44.03`
+- 10 inputs: `27`
+- 100 inputs: `16.77`
+- 10000 inputs: `45.03`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score](https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score)
