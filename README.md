@@ -4,6 +4,7 @@ Estimation of synthetic accessibility score (SAScore) of drug-like molecules bas
 
 This model was incorporated on 2022-07-12.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos9ei3`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-07-12.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Synthetic accessibility`, `Chemical synthesis`
 
 ### Input
