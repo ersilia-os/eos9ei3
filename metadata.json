@@ -33,7 +33,7 @@
     ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2009,
-    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8",
+    "Publication": "https://doi.org/10.1186/1758-2946-1-8",
     "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score",
     "License": "BSD-3-Clause",
     "Contributor": "miquelduranfrigola",
