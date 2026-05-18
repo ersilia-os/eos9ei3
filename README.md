@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score](https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score)
-- **Publication**: [https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8)
+- **Publication**: [https://doi.org/10.1186/1758-2946-1-8](https://doi.org/10.1186/1758-2946-1-8)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2009`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
