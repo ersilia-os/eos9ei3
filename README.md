@@ -1,6 +1,6 @@
 # Synthetic accessibility score
 
-Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.
+Calculates the synthetic accessibility score of Ertl and Schuffenhauer, combining a fragment contribution term, derived from how commonly each substructure appears in PubChem, with a penalty for size, stereocomplexity, macrocycles and unusual ring systems. The result runs from 1 to 10 and is inverted relative to intuition: low scores mark compounds that should be straightforward to make, high scores flag difficult ones. It remains a standard filter for triaging generative model output.
 
 This model was incorporated on 2022-07-12.Last packaged on 2025-09-15.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-07-12.Last packaged on 2025-09-15.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Low scores indicate higher synthetic accessibility
+- **Interpretation:** Synthetic accessibility score from 1 to 10, where lower values indicate easier synthesis.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
