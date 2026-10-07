@@ -1,6 +1,6 @@
 # Synthetic accessibility score
 
-Calculates the synthetic accessibility score of Ertl and Schuffenhauer, combining a fragment contribution term, derived from how commonly each substructure appears in PubChem, with a penalty for size, stereocomplexity, macrocycles and unusual ring systems. The result runs from 1 to 10 and is inverted relative to intuition: low scores mark compounds that should be straightforward to make, high scores flag difficult ones. It remains a standard filter for triaging generative model output.
+Calculates the synthetic accessibility score of Ertl and Schuffenhauer, combining a fragment contribution term, derived from how commonly each substructure occurs among one million representative PubChem molecules, with a penalty for size, stereocomplexity, macrocycles and unusual ring systems. Scores run from 1 to 10 and are inverted relative to intuition, low marking compounds that should be straightforward to make. The authors checked the score against estimates by experienced medicinal chemists for 40 molecules, agreeing with r2 of 0.89. This is the implementation contributed to RDKit.
 
 This model was incorporated on 2022-07-12.Last packaged on 2025-09-15.
 
