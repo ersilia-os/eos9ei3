@@ -4,6 +4,8 @@ import csv
 import sys
 from rdkit import Chem
 import time
+import shutil
+import tempfile
 from sascorer import readFragmentScores, processMols
 
 # parse arguments
@@ -22,7 +24,11 @@ with open(input_file, "r") as f:
     for r in reader:
         smiles_list += [r[0]]
 
-with open("tmp_input.smi", "w") as f:
+# temporary files go to a fresh temp dir: the working directory may be read-only (e.g. Apptainer)
+tmp_dir = tempfile.mkdtemp()
+tmp_input = os.path.join(tmp_dir, "tmp_input.smi")
+
+with open(tmp_input, "w") as f:
     writer = csv.writer(f, delimiter=" ")
     writer.writerow(["smiles", "identifier"]) # header
     for i, smi in enumerate(smiles_list):
@@ -30,7 +36,7 @@ with open("tmp_input.smi", "w") as f:
 
 # run model
 readFragmentScores("fpscores")
-suppl = Chem.SmilesMolSupplier("tmp_input.smi")
+suppl = Chem.SmilesMolSupplier(tmp_input)
 R = processMols(suppl)
 
 outputs = []
@@ -49,4 +55,4 @@ with open(output_file, "w") as f:
     for o in outputs:
         writer.writerow([o])
 
-os.remove("tmp_input.smi")
+shutil.rmtree(tmp_dir, ignore_errors=True)
