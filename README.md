@@ -3,7 +3,7 @@
 Calculates the synthetic accessibility score of Ertl and Schuffenhauer, combining a fragment contribution term, derived from how commonly each substructure occurs among one million representative PubChem molecules, with a penalty for size, stereocomplexity, macrocycles and unusual ring systems. Scores run from 1 to 10 and are inverted relative to intuition, low marking compounds that should be straightforward to make. The authors checked the score against estimates by experienced medicinal chemists for 40 molecules, agreeing with r2 of 0.89. This is the implementation contributed to RDKit.
 
 This model was incorporated on 2022-07-12.
-Last packaged on 2025-09-15.
+Last packaged on 2026-11-27.
 
 ## Information
 ### Identifiers
@@ -36,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ei3](https://hub.docker.com/r/ersiliaos/eos9ei3)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `8`
 - **Environment Size (Mb):** `503`
-- **Image Size (Mb):** `450.34`
+- **Image Size (Mb):** `163.24`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27`
-- 100 inputs: `16.77`
-- 10000 inputs: `45.03`
+- 10 inputs: `27.64`
+- 100 inputs: `17.41`
+- 10000 inputs: `44.44`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score](https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score)
